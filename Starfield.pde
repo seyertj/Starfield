@@ -7,7 +7,7 @@ void setup()
   {
     ann[i] = new NormalParticle();
   }
-  ann[0] = new OddballParticle();
+  ann[1000] = new OddballParticle();
   ann[999] = new JumboParticle();
 }
 void draw()
@@ -22,7 +22,7 @@ void draw()
 class NormalParticle implements Particle
 {
 	public double myX, myY, myAngle, mySpeed;
-  public int cX, cY;
+  //public int cX, cY;
   NormalParticle()
   {
     myX = myY = 250;
